@@ -1,0 +1,101 @@
+/* ------>>> Google Fonts <<<-------*/
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/* ---------->>> RULES <<<-----------*/
+/* remove margin top html */
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Nunito',Sans-serif;
+}
+/* sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --------->>> HTML TAG <<<----------*/
+/* body */
+body{
+  background-color: #eee;
+  color: #212529;
+}
+/* a link href */
+a:link,a:visited,a:hover,a:active{
+  text-decoration: none;
+}
+a:link{
+  color: #007bff;
+}
+a:visited{
+  color: #0063ce;
+}
+a:hover{
+  color: #007bff;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+a:active{
+  color: #aaa;
+}
+/* simple table look
+table {
+  border: 2px solid white;
+  padding: 10px;
+  margin: 4px;
+} */
+/* button proper size */
+button {
+  margin: 0;
+  font-size: inherit;
+}
+
+/* ----->>> Color Template <<<------*/
+:root {
+  --blue: #007bff;
+  --navy: #001F3F;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --fuschia: #F012BE;
+  --pink: #e83e8c;
+  --red: #ff4136;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --lime: #01FF70;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --aqua:#7FDBFF;
+  --white: #fff;
+  --gray: #868e96;
+  --gray--dark: #343a40;
+  --primary: #007bff;
+  --secondary: #868e96;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  /*tambahan warna dibawah
+  --(nama): (#kodewarna);
+  --(nama): (#kodewarna);*/
+}
+
+.row{
+  display:flex;
+  flex-direction:row;
+  padding: 5px 0px;
+}
+.rowlogo{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.col{
+  display:flex;
+  flex-direction:column;
+}

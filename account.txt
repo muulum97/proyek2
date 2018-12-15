@@ -1,0 +1,8 @@
+ADMIN/PENGELOLA
+admin admin
+
+USER/PELANGGAN
+user user
+ulum ulum
+rekso buwono
+alison 1234

@@ -1,0 +1,32 @@
+/* navigation*/
+.navadmin{
+	background-color: #eee;
+	text-align: center;
+}
+.navadmin a{
+	display: inline-block;
+	background-color: #555;
+	padding: 10px;
+	margin-right: -5px;
+}
+.contentadmin{
+	background-color: #777;
+	padding: 20px;
+	text-align: center;
+}
+.contentadmin input,textarea{
+	background-color: #fff;
+	padding: 5px;
+  border-radius: 8px;
+}
+.contentadmin input[type=submit],input[type=reset]{
+	background-color: #ddd;
+	padding: 5px;
+	text-align: center;
+}
+/* content */
+.admin{
+	background-color: #333;
+	color: white;
+	width: 1200px;
+}
