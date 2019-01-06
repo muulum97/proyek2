@@ -12,6 +12,7 @@
 <p>Pesanan</p>
 <br><br>
 <a href="order.php">Lihat Pesanan</a>
+<a href="orderpesanancustom.php">Lihat Pesanan Custom</a>
 <a href="laporanbulanan.php">Lihat Laporan pemesanan bulanan</a>
 <a href="laporantahunan.php">Lihat Laporan pemesanan tahunan</a>
 </div>

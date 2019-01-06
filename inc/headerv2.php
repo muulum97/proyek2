@@ -11,6 +11,8 @@
 
     <title><?php echo $title; ?></title>
 
+    <link rel="icon" type="image/png" href="img/icons/icon.jpg"/>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,7 +28,7 @@
       <div class="container">
         <a class="navbar-brand" href="<?php echo _SITE_ ?>" <?php if ($page == 'index.php') { echo ' class="active"'; } ?>>Raja Cetak</a>
 
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="">
             <?php
               if(ISSET($_SESSION['user']))
               {
@@ -66,7 +68,7 @@
           //jika sudah dan statusnya admin
           if(cek_role($_SESSION['user'])<1){ ?>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo _SITE_ ?>admin.php" <?php if ($page == 'admin.php') { echo ' class="active"'; } ?>>Admin Page</a>
+              <a class="nav-link" href="<?php echo _SITE_ ?>adminv2.php" <?php if ($page == 'adminv2.php') { echo ' class="active"'; } ?>>Admin Page</a>
         </li>
         <?php
           }

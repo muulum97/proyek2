@@ -9,10 +9,8 @@ $title = "Pesanan anda";
 $css = array("css/rules.css","css/style.css","css/id.css","css/admin.css");
 
 require_once "inc/headerv2.php";
+
 ?>
-<div class="container">
-	<div class="home">
-		<div class="contentadmin">
 			<?php 
 			$page = $_GET['act'];
 			switch ($page) {
@@ -33,9 +31,8 @@ require_once "inc/headerv2.php";
 					break;
 			}
 			?>
-		</div>
-	</div>
-</div>
+<br>
+<br>
 <?php
 require_once "inc/footerv2.php"
 ?>

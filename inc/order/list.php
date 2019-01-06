@@ -11,13 +11,15 @@ if(!isset($_GET['status_order'])){
 ?>
 <div align="center">
 	<br>
-	<h2><?php
+	<h2>
+    <?php
 	if(cek_role($_SESSION['user'])<1){
 		echo "Daftar Pesanan";
 	}else{
 		echo "Daftar pesanan saya";
 	}
-	?></h2>
+	?>
+    </h2>
 	<br>
 </div>
 
@@ -26,15 +28,15 @@ if(!isset($_GET['status_order'])){
 	<select name="status_order">
     <option value="" disabled selected>Status pesanan</option>
     <option value="semua">Semua</option> 
-    <option value="diterima">Diterima</option> 
-    <option value="proses">Diproses</option> 
-    <option value="antar">Diantar</option> 
+    <option value="diproses">Diterima</option> 
+    <option value="didesain">Didesain</option> 
+    <option value="dicetak">Dicetak</option> 
     <option value="selesai">Selesai</option> 
     <option value="dibatalkan">Dibatalkan</option> 
   </select> 
   	<?php 
   	echo $_GET['status_order']; ?> 
-  <button type="submit">submit</button>
+  <button type="submit" class="btn btn-primary">submit</button>
   </form>
 </div>
 <br>
@@ -49,7 +51,7 @@ if(!isset($_GET['status_order'])){
         }
         break;
 
-        case 'proses':
+        case 'didesain':
         if(cek_role($_SESSION['user'])<1){
             $query = "SELECT * FROM pesanan WHERE status='Sedang Diproses' ORDER BY tanggal DESC";
         }else{
@@ -57,7 +59,7 @@ if(!isset($_GET['status_order'])){
         }
         break;
 
-        case 'antar':
+        case 'dicetak':
         if(cek_role($_SESSION['user'])<1){
             $query = "SELECT * FROM pesanan WHERE status='Sedang dicetak' ORDER BY tanggal DESC";
         }else{
@@ -65,7 +67,7 @@ if(!isset($_GET['status_order'])){
         }
         break;
 
-        case 'diterima':
+        case 'diproses':
         if(cek_role($_SESSION['user'])<1){
         	$query = "SELECT * FROM pesanan WHERE status='Pesanan diterima' ORDER BY tanggal DESC";
         }else{

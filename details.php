@@ -28,7 +28,7 @@ $row=mysqli_fetch_array($query);
 			<div class="box">
 				<p class="detailtitle">
 <?php
-				echo $row["nama"]."<br>";
+				echo $row["nama"]."<br>";	
 ?>
 				</p>
 				<p class="detail">

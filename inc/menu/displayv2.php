@@ -13,6 +13,7 @@
     echo "Hasil pencarian : <b>".$_GET['query']."</b>";
   }else{
     echo "<h1 class=\"my-4\">Pesan Banner Disini Aja</h1>";
+    echo "<h2 class=\"my-4\">Punya Desain Sendiri? Pesan <a href=\"pesanancustom.php\">Disini</a></h2>";
   }
 ?>
 </div>

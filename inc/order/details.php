@@ -95,18 +95,21 @@ while($orditmr = mysqli_fetch_assoc($orditm)){
 </table>
 <br>
 
+<center>
 <?php
 if($ordsql['status'] == "Pesanan diterima"){ ?>
 <form action="<?php echo _SITE_ ?>konfirmasidp.php">
-<button type="submit" value="Submit">Konfirmasi Pembayaran</button>
+<button type="submit" value="Submit" >Konfirmasi Pembayaran</button>
 </form>
 <?php }
 ?>
+</center>
 
-<br>
+<center>
 <?php
 if($track['status']=="Dibatalkan"){
 	echo "<br>Alasan dibatalkan : ";
 }
 echo $track['pesan']."<br>";
 ?>
+</center>

@@ -49,6 +49,8 @@ if(isset($_SESSION['msg'])){
 
     <title>Registrasi Akun</title>
 
+    <link rel="icon" type="image/png" href="img/icons/icon.jpg"/>
+
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 

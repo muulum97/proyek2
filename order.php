@@ -18,9 +18,6 @@ if(!isset($_GET['p'])){
 require_once "inc/headerv2.php";
 ?>
 
-<div class="container">
-  <div class="home">
-    <div class="contentadmin">
       <?php
       $p = $_GET['p'];
       switch ($p) {
@@ -67,10 +64,8 @@ require_once "inc/headerv2.php";
         
       }
       ?>
-    </div>
-	</div>
-</div>
-
+<br>
+<br>
 <?php
 require_once "inc/footerv2.php"
 ?>

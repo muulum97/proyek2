@@ -46,21 +46,19 @@
 		<tr>
 			<th><h6>Jml</h6></th>
 			<th colspan="3" class="text-center"><h6>Total</h6></th>
-			<th colspan="2" class="text-center"><h6>Biaya Desain</h6></th>
-			<th colspan="2" class="text-center"><h6>Grand total</h6></th>
+			<th colspan="3" class="text-center"><h6>Biaya Desain</h6></th>
+			<th colspan="3" class="text-center"><h6>Grand total</h6></th>
 		</tr>
 		<tr>
 			<td><?php echo $totalqty; ?> Meter</td>
 			<td colspan="3"><?php echo("Rp".number_format($total,0,",",".")); ?></td>
-			<td colspan="2">Rp20.000</td>
-			<td colspan="2" class="text-center"><?php echo("Rp".number_format($total+20000,0,",",".")); ?></td>
+			<td colspan="3">Rp20.000</td>
+			<td colspan="3" class="text-center"><?php echo("Rp".number_format($total+20000,0,",",".")); ?></td>
 		</tr>
 		<tr>
 			<td colspan="10" class="text-center">
 				<form action="" method="post">
-					<textarea rows="4" cols="50" name="deskripsi">
-isi Deskripsi Produk disini ...
-					</textarea>
+					<textarea rows="" cols="50" name="deskripsi"> isi Deskripsi Produk pesanan disini ...</textarea>
 						<br>
 						<br>
 						<input type="submit" name="agree" value="Pesan">

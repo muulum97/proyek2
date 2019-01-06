@@ -52,6 +52,8 @@ if(isset($_SESSION['msg'])){
 
     <title>Login</title>
 
+    <link rel="icon" type="image/png" href="img/icons/icon.jpg"/>
+
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -65,13 +67,6 @@ if(isset($_SESSION['msg'])){
 
   <body class="bg-dark">
   	<div class="form">
-
-			<?php if(isset($_SESSION['msg'])){ ?>
-				<?php
-				echo $flash;
-				unset($_SESSION['msg']); ?>
-			<?php }?>
-
     <div class="container">
       <div class="card card-login mx-auto mt-5">
         <div class="card-header">Login</div>
@@ -90,14 +85,16 @@ if(isset($_SESSION['msg'])){
                 <label for="inputPassword">Password</label>
               </div>
             </div>
+            <?php if(isset($_SESSION['msg'])){ ?>
             <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="remember-me">
-                  Remember Password
-                </label>
-              </div>
+            <div class="alert alert-danger" role="alert">
+				<?php
+				echo $flash;
+				unset($_SESSION['msg']); ?>
+        </div>
             </div>
+			<?php }?>
+
             <input type="submit" class="btn btn-primary btn-block"  name="loginsubmit" value="Login"/>
           </form>
           <div class="text-center">
